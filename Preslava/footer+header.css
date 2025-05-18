@@ -14,6 +14,9 @@ footer{
     flex-wrap: wrap-reverse;
     margin-top: 2em;
     padding: 1em;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 .head{
