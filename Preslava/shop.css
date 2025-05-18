@@ -93,5 +93,21 @@ body {
 .stock:hover {
     transform: scale(1.05);
 }
+a{
+    text-decoration: none;
+    color: #546760;
+    text-align: center;
+    background-color: #f0fcf8;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    top: 0em;
+    right: 0em;
+    height: 0.7em;
+    width: 0.7em;
+}
 
-
+a:hover {
+    background-color: #79a596;
+    color: #f5f5f5;
+    transform: scale(1.05);
+}
