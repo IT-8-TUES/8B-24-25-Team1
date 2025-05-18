@@ -69,3 +69,17 @@ header {
   background-color: #996828;
   text-decoration: none;
 }
+
+#profile{
+  position: absolute;
+    top: 0.4rem;
+    left: 1rem;
+    background-color: #ffd56b;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
