@@ -14,18 +14,29 @@
         <div id="profile">
             <h3>Username</h3>
             <img src="/Image-sorce/cat.gif" width="30%">
-            <button type="button" onclick="document.getElementById('pets').style.display='block'">Change pet</button>
+            <button id="button1">Change pet</button>
         </div>
-        <div id="pets">
-            <div><img src="/Image-sorce/cat.gif"><button>Select</button></div>
-            <div><img src="/Image-sorce/catnormal.png"><button>Select</button></div>
-            <div><img src="/Image-sorce/Untitled129_20250422193436.png"><button>Select</button></div>
-            <div><img src="/Image-sorce/Untitled129_20250422194538.png"><button>Select</button></div>
+        <div id="pets-none">
+
+            <div id="pets">
+                <div class="pet"><img style="height: 20rem;" src="/Image-sorce/cat.gif"><button>Select</button></div>
+                <div class="pet"><img style="height: 20rem;" src="/Image-sorce/catnormal.png"><button>Select</button></div>
+                <div class="pet"><img style="height: 20rem;" src="/Image-sorce/Untitled129_20250422193436.png"><button>Select</button></div>
+                <div class="pet"><img style="height: 20rem;" src="/Image-sorce/Untitled129_20250422194538.png"><button>Select</button></div>
+            </div>
         </div>
     </main>
     <footer>
         <span>Pet Clicker &copy; 2025</span>
         <span>All rights reserved</span>
     </footer>
+    <script>
+        document.getElementById("button1").onclick = function(){
+            document.getElementById("pets-none").style.display="block"
+            document.getElementsByTagName("header")[0].style.display="none"
+            document.getElementsByTagName("a")[0].style.display="none"
+            document.getElementById("profile").style.display="none"
+        }
+    </script>
 </body>
 </html>
