@@ -1,5 +1,16 @@
 #pets-none{
     display: none;
+
+.pet{
+    border: 1rem solid orange;
+}
+
+#pets{
+    display: flex;
+     justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 header{
