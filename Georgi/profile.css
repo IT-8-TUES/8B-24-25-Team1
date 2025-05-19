@@ -1,8 +1,8 @@
 #pets-none{
     display: none;
-
+}
 .pet{
-    border: 1rem solid orange;
+    border: 1rem solid #f8c239;
 }
 
 #pets{
@@ -15,7 +15,7 @@
 
 header{
     height: 2rem;
-    background-color: orange;
+    background-color: #f8c239;
     padding: 1rem;
     font-size: 2rem;
     display: flex;
@@ -31,7 +31,7 @@ body{
 }
 
 #back{
-     position: absolute;
+    position: absolute;
     top: 0.5rem;
     right: 1rem;
     background-color: #ffd56b;
