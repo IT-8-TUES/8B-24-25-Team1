@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="settings.css">
   <link rel="stylesheet" href="/Preslava/footer+header.css">
   <link rel="icon" type="image/png" href="catnormal.png">
+   <script src="clicker.js"></script>
 
 </head>
 <body>
@@ -18,11 +19,11 @@
   <a id="profile" href="/Georgi/profile.html">Profile</a>
   <div class="love">
     <img src="https://img.icons8.com/emoji/48/heart-suit.png" width="40" height="40" alt="Heart" />
-    <span>1,423</span>
+    <span id="love">0</span>
   </div>
 
   <div class="pet">
-    <img src="cat.gif" alt="Cat" style="mix-blend-mode: multiply; width: 400px; height: 300px;"/>
+    <img id="cat" src="/Image-sorce/cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
     <p style="font-style: italic; color: #7c5c46; font-size: 40px;">Your friend!</p>
   </div>
 
@@ -37,19 +38,48 @@
     <h1 style="font-size: 3rem;">Профил</h1>
   
     <div class="info">
-      <p><strong>Потребителско име:</strong> Иван</p>
-      <button class="e-btn">Промени потребителското име</button>
-  
-      <p><strong>Имейл:</strong> ivan@example.com</p>
-      <button class="e-btn">Промени имейла</button>
-  
-      <p><strong>Профилна снимка:</strong></p>
-      <div class="avatar-row">
-        <img class="avatar" src="parzeni-kartofi.webp" alt="Примерна снимка">
-        <button class="e-btn-lrg">Промени снимката</button>
-      </div>
-    </div>
-    <button class="l-btn">Изход от профила</button>
+  <p><strong>Потребителско име:</strong> <span id="username">Иван</span></p>
+  <button class="e-btn" id="edit-username">Промени потребителското име</button>
+  <div id="username-edit" style="display: none;">
+    <input type="text" id="username-input" />
+    <button id="save-username">Запази</button>
   </div>
+
+  <p><strong>Имейл:</strong> <span id="email">ivan@example.com</span></p>
+  <button class="e-btn" id="edit-email">Промени имейла</button>
+  <div id="email-edit" style="display: none;">
+    <input type="email" id="email-input" />
+    <button id="save-email">Запази</button>
+    <p id="email-error" style="color: red; display: none;">Невалиден имейл!</p>
+  </div>
+
+  <p><strong>Профилна снимка:</strong></p>
+  <div class="avatar-row">
+    <img class="avatar" id="avatar-img" src="parzeni-kartofi.webp" alt="Примерна снимка">
+    <button class="e-btn-lrg" id="edit-avatar">Промени снимката</button>
+  </div>
+  <div id="avatar-edit" style="display: none;">
+    <input type="text" id="avatar-input" placeholder="URL на снимка" />
+    <button id="save-avatar">Запази</button>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cat = document.getElementById('cat');
+    const loveCount = document.getElementById('love');
+
+    cat.addEventListener('click', () => {
+      // Вземаме текущия текст, махаме запетайката, и го превръщаме в число
+      let currentLove = parseInt(loveCount.textContent.replace(',', ''));
+
+      // Добавяме 10
+      currentLove += 10;
+
+      // Преобразуваме числото обратно в текст с формат: 1,433
+      loveCount.textContent = currentLove.toLocaleString('en-US');
+    });
+  });
+</script>
+
 </body>
 </html>
