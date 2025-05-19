@@ -39,4 +39,16 @@ body{
     align-items: center;
     border: 1rem solid #ffd56b;
     padding: 1rem;
+    font-size: 2rem;
+}
+
+button{
+    background-color: #ffd56b;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
 }
