@@ -1,19 +1,19 @@
 header{
     height: 2rem;
+    color: white;
     background-color: #ffb347;
     padding: 1rem;
     font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
 }
 
 body{
     margin: 0;
     background-image: url(/Image-sorce/patternbkg.png);
     background-repeat: no-repeat;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 #home{

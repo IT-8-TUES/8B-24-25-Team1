@@ -2,7 +2,7 @@ body{
     margin: 0rem;
     background-image: url(/Image-sorce/patternbkg.png);
     background-repeat: no-repeat;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 .pet{
@@ -29,13 +29,13 @@ body{
 
 header{
     height: 2rem;
+    color: white;
     background-color: #ffb347;
     padding: 1rem;
     font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
 }
 
 .button-nav{
@@ -80,6 +80,11 @@ img{
     position: relative;
     border-radius: 0rem;
     border-width: 1rem 0rem 0rem 0rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
 footer{
