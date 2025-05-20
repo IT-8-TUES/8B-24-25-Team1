@@ -29,7 +29,7 @@
 
   <div class="menu">
     <a href="/Georgi/pets.html">Pets</a>
-    <a href="#">Upgrades</a>
+    <a href="/Preslava/achievements.html">Achievements</a>
     <a href="/Preslava/shop.html">Store</a>
   </div>
   <a link="settings.html" class="t-btn">Settings</a>
@@ -68,20 +68,71 @@
     const cat = document.getElementById('cat');
     const loveCount = document.getElementById('love');
 
+//Yana trqbwashe da dobawq mn neshta tuk za funciite na predmetite, zatowa kato se wurna ot chuvbina move da se opitam da ti obqsnq chastite... -preslava
+     let currentLove = Number(localStorage.getItem('loveCount')) || 0;
+    loveCount.textContent = currentLove.toLocaleString('en-US');
+    
+    function startAutoclicker() {
+  if (window.autoclickerInterval) return; // Prevent multiple intervals
+
+  window.autoclickerInterval = setInterval(() => {
+    let loveCount = document.getElementById('love');
+    let currentLove = parseInt(loveCount.textContent.replace(',', ''));
+    let multipliers = JSON.parse(localStorage.getItem('multipliers')) || [];
+    let totalMultiplier = 1 + multipliers.reduce((sum, m) => sum + m, 0);
+
+    // Check for temporary multiplier
+    let temp = JSON.parse(localStorage.getItem('tempMultiplier'));
+    if (temp && Date.now() < temp.expires) {
+      totalMultiplier += temp.value;
+    }
+
+    currentLove += 1 * totalMultiplier; // 1 auto-click per interval
+    loveCount.textContent = Math.floor(currentLove).toLocaleString('en-US');
+    localStorage.setItem('loveCount', currentLove);
+  }, 1000); // Every 1 second
+}
+
+// Start autoclicker if enabled in localStorage
+if (localStorage.getItem('autoclickerEnabled') === 'true') {
+  startAutoclicker();
+}
+
+
     cat.addEventListener('click', () => {
       // Вземаме текущия текст, махаме запетайката, и го превръщаме в число
       let currentLove = parseInt(loveCount.textContent.replace(',', ''));
 
-      // Добавяме 10
-      currentLove += 1;
+        let multipliers = JSON.parse(localStorage.getItem('multipliers')) || [];
+        // Calculate total multiplier (e.g., base 1 + sum of all bonuses)
+        let totalMultiplier = 1 + multipliers.reduce((sum, m) => sum + m, 0);
+
+    let totalClicks = Number(localStorage.getItem('totalClicks')) || 0;
+    totalClicks += 1;
+    localStorage.setItem('totalClicks', totalClicks);
+
+    let temp = JSON.parse(localStorage.getItem('tempMultiplier'));
+    if (temp && Date.now() < temp.expires) {
+       totalMultiplier += temp.value;
+    }
+
+  if (totalClicks % 100 === 0) {
+    // Set a temporary multiplier (e.g., +1 for x2) for 1 minute
+    localStorage.setItem('tempMultiplier', JSON.stringify({ value: 1, expires: Date.now() + 60000 }));
+  }
+      
+
+      currentLove += 1 * totalMultiplier; // Увеличаваме с 1
 
       // Преобразуваме числото обратно в текст с формат: 1,433
-      loveCount.textContent = currentLove.toLocaleString('en-US');
+        loveCount.textContent = Math.floor(currentLove).toLocaleString('en-US');
 
+      // Запазваме текущия брой в localStorage
+      localStorage.setItem('loveCount', currentLove);
     });
+
   });
-  localStorage.setItem('loveCount', loveCount.textContent);
-  
+
   
 </script>
 
