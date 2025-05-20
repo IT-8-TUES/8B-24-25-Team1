@@ -1,6 +1,3 @@
-#pets-none{
-    display: none;
-}
 .pet{
     border: 1rem solid #f8c239;
     border-radius: 1rem;
@@ -41,10 +38,11 @@ body{
 
 #back{
     position: absolute;
-    top: 0.5rem;
+    top: 0.3rem;
     right: 1rem;
     background-color: #ffd56b;
     padding: 1rem;
+    border: 0.25rem solid #f8c239;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -69,16 +67,33 @@ body{
 button{
     background-color: #ffd56b;
     padding: 1rem;
+    border: 0.25rem solid #f8c239;
     border-radius: 1rem;
-    border-color: #f8c239;
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
-    border-width: 0.25rem;
     color: black;
     text-decoration: none;
 }
 
 button:hover{
-   background-color: #f9c950; 
+   background-color: #f8c239; 
+}
+
+#button-change-pet:hover{
+    background-color: #f8c239;
+}
+
+#button-change-pet{
+    background-color: #ffd56b;
+    padding: 1rem;
+    border: 0.5rem solid #f8c239;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    width: 18rem;
+    text-align: center;
 }
