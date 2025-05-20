@@ -71,9 +71,19 @@ if (localStorage.getItem('autoclickerEnabled') === 'true') {
 
     cat.addEventListener('click', () => {
       let currentLove = parseInt(loveCount.textContent.replace(',', ''));
+      let multipliers = JSON.parse(localStorage.getItem('multipliers')) || [];
+      let totalMultiplier = 1 + multipliers.reduce((sum, m) => sum + m, 0);
+
+  // Check for temporary multiplier
+      let temp = JSON.parse(localStorage.getItem('tempMultiplier'));
+      if (temp && Date.now() < temp.expires) {
+         totalMultiplier += temp.value;
+      }
 
 
 
+      currentLove += 1 * totalMultiplier;
+      loveCount.textContent = Math.floor(currentLove).toLocaleString('en-US');
       localStorage.setItem('loveCount', currentLove);
     });
 
