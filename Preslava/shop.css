@@ -90,6 +90,11 @@ body {
     border: 2px solid #79a596;
 }
 
+img{
+    border-radius: 10px;
+}
+
+
 .stock:hover {
     transform: scale(1.05);
 }
@@ -110,4 +115,22 @@ a:hover {
     background-color: #79a596;
     color: #f5f5f5;
     transform: scale(1.05);
+}
+
+
+.love{
+    background-color: #f5f5f5;
+    color: #546760;
+    margin: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(34, 34, 35, 0.2);
+    border-color: #8fb3aa;
+    border-width: 0.05em;
+    border-style: solid;
+    text-align: center;
+    font-size: 4em;
+    max-height: 50em;
+    width: auto;
+    position: absolute;
+    top: 0em;
 }
