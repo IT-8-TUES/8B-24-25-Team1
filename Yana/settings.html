@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Clicker</title>
+  <link rel="stylesheet" href="clicker.css">
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="/Preslava/footer+header.css">
+  <link rel="icon" type="image/png" href="catnormal.png">
+   <script src="clicker.js"></script>
+
+</head>
+<body>
+  <style>
+            @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+        </style>
+  <header>Pet Clicker</header>
+  <a id="profile" href="/Georgi/profile.html">Profile</a>
+  <div class="love">
+    <img src="https://img.icons8.com/emoji/48/heart-suit.png" width="40" height="40" alt="Heart" />
+    <span id="love">0</span>
+  </div>
+
+  <div class="pet">
+    <img id="cat" src="cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
+    <p style="font-style: italic; color: #7c5c46; font-size: 40px;">Your friend!</p>
+  </div>
+
+  <div class="menu">
+    <a href="#">Pets</a>
+    <a href="#">Upgrades</a>
+    <a href="/Preslava/shop.html">Store</a>
+  </div>
+  <a link="settings.html" class="t-btn">Settings</a>
+  <div class="pnl" id="pnlSettings">
+    <a href="index.html" class="c-btn">×</a>
+    <h1 style="font-size: 3rem;">Профил</h1>
+  
+    <div class="info">
+  <p><strong>Потребителско име:</strong> <span id="username">Kartofi-lover</span></p>
+  <button class="e-btn" id="edit-username">Промени потребителското име</button>
+  <div id="username-edit" style="display: none;">
+    <input type="text" id="username-input" />
+    <button id="save-username">Запази</button>
+  </div>
+
+  <p><strong>Имейл:</strong> <span id="email">purzeni@kartofi.com</span></p>
+  <button class="e-btn" id="edit-email">Промени имейла</button>
+  <div id="email-edit" style="display: none;">
+    <input type="email" id="email-input" />
+    <button id="save-email">Запази</button>
+    <p id="email-error" style="color: red; display: none;">Невалиден имейл!</p>
+  </div>
+
+  <p><strong>Профилна снимка:</strong></p>
+  <div class="avatar-row">
+    <img class="avatar" id="avatar-img" src="/Image-sorce/parzeni-kartofi.webp" alt="Примерна снимка">
+    <button class="e-btn-lrg" id="edit-avatar">Промени снимката</button>
+  </div>
+  <div id="avatar-edit" style="display: none;">
+    <input type="text" id="avatar-input" placeholder="URL на снимка" />
+    <button id="save-avatar">Запази</button>
+  </div>
+</div>
+
+</body>
+</html>
