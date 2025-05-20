@@ -1,17 +1,15 @@
 
 .t-btn {
-       position: absolute;
-    top: 0.4rem;
-    right: 0.6rem;
-    background-color: #ffd56b;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
-
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: #ffd56b;
+      border: none;
+      padding: 0.625rem 1.25rem;
+      border-radius: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
     }
 
     .t-btn:hover {

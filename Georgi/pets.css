@@ -1,3 +1,32 @@
+body{
+    margin: 0rem;
+    background-image: url(/Image-sorce/patternbkg.png);
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.pet{
+    border: 1rem solid #f8c239;
+    border-radius: 1rem;
+    width: 28rem;
+    height: 25rem;
+}
+
+.pet button{
+    width: 28rem;
+    height: 4rem;
+}
+
+#pets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+
 header{
     height: 2rem;
     background-color: #ffb347;
@@ -9,17 +38,9 @@ header{
     font-weight: bold;
 }
 
-body{
-    margin: 0;
-    background-image: url(/Image-sorce/patternbkg.png);
-    background-repeat: no-repeat;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-#home{
+.button-nav{
     position: absolute;
     top: 0.1rem;
-    right: 1rem;
     background-color: #ffd56b;
     padding: 1rem;
     border: 0.25rem solid #f8c239;
@@ -31,18 +52,8 @@ body{
     color: black;
 }
 
-#home:hover{
+.button-nav:hover{
     background-color: #f8c239;
-}
-
-#profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid #ffb347;
-    border-width: 0rem 1rem 1rem 1rem;
-    padding: 1rem;
-    font-size: 2rem;
 }
 
 button{
@@ -61,23 +72,14 @@ button:hover{
    background-color: #f8c239; 
 }
 
-#button-change-pet:hover{
-    background-color: #f8c239;
+img{
+    position: relative;
 }
 
-#button-change-pet{
-    background-color: #ffd56b;
-    padding: 1rem;
-    border: 0.5rem solid #f8c239;
-    border-radius: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
-    width: 18rem;
-    text-align: center;
-    font-size: 2rem;
+.button-select{
+    position: relative;
+    border-radius: 0rem;
+    border-width: 1rem 0rem 0rem 0rem;
 }
 
 footer{
