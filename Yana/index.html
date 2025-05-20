@@ -23,59 +23,26 @@
   </div>
 
   <div class="pet">
-    <img id="cat" src="/Image-sorce/cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
+    <img id="cat" src="cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
     <p style="font-style: italic; color: #7c5c46; font-size: 40px;">Your friend!</p>
   </div>
 
   <div class="menu">
     <a href="#">Pets</a>
-    <a href="#">Upgrades</a>
+    <a href="/Preslava/achievements.html">achievements</a>
     <a href="/Preslava/shop.html">Store</a>
   </div>
-  <a link="settings.html" class="t-btn">Settings</a>
-  <div class="pnl" id="pnlSettings">
-    <span class="c-btn">×</span>
-    <h1 style="font-size: 3rem;">Профил</h1>
-  
-    <div class="info">
-  <p><strong>Потребителско име:</strong> <span id="username">Иван</span></p>
-  <button class="e-btn" id="edit-username">Промени потребителското име</button>
-  <div id="username-edit" style="display: none;">
-    <input type="text" id="username-input" />
-    <button id="save-username">Запази</button>
-  </div>
-
-  <p><strong>Имейл:</strong> <span id="email">ivan@example.com</span></p>
-  <button class="e-btn" id="edit-email">Промени имейла</button>
-  <div id="email-edit" style="display: none;">
-    <input type="email" id="email-input" />
-    <button id="save-email">Запази</button>
-    <p id="email-error" style="color: red; display: none;">Невалиден имейл!</p>
-  </div>
-
-  <p><strong>Профилна снимка:</strong></p>
-  <div class="avatar-row">
-    <img class="avatar" id="avatar-img" src="parzeni-kartofi.webp" alt="Примерна снимка">
-    <button class="e-btn-lrg" id="edit-avatar">Промени снимката</button>
-  </div>
-  <div id="avatar-edit" style="display: none;">
-    <input type="text" id="avatar-input" placeholder="URL на снимка" />
-    <button id="save-avatar">Запази</button>
-  </div>
-</div>
+  <a href="settings.html" class="t-btn">Settings</a>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cat = document.getElementById('cat');
     const loveCount = document.getElementById('love');
 
     cat.addEventListener('click', () => {
-      // Вземаме текущия текст, махаме запетайката, и го превръщаме в число
       let currentLove = parseInt(loveCount.textContent.replace(',', ''));
 
-      // Добавяме 10
       currentLove += 10;
 
-      // Преобразуваме числото обратно в текст с формат: 1,433
       loveCount.textContent = currentLove.toLocaleString('en-US');
     });
   });
