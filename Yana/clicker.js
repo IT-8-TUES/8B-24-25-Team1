@@ -3,15 +3,6 @@
     const settingsButton = document.querySelector('.t-btn');
     const closeButton = document.querySelector('.c-btn');
     const settingsPanel = document.getElementById('pnlSettings');
-
-    settingsButton.addEventListener('click', (e) => {
-      e.preventDefault(); 
-      settingsPanel.style.display = 'block';
-    });
-
-    closeButton.addEventListener('click', () => {
-      settingsPanel.style.display = 'none';
-    });
   });
 
   document.addEventListener('DOMContentLoaded', () => {
