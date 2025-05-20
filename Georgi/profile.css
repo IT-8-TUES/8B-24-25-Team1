@@ -1,27 +1,6 @@
-.pet{
-    border: 1rem solid #f8c239;
-    border-radius: 1rem;
-    width: 28rem;
-    height: 25rem;
-}
-
-.pet button{
-    width: 28rem;
-    height: 4rem;
-}
-
-#pets{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
 header{
     height: 2rem;
-    background-color: rgb(248, 194, 57);
+    background-color: #ffb347;
     padding: 1rem;
     font-size: 2rem;
     display: flex;
@@ -32,13 +11,14 @@ header{
 
 body{
     margin: 0;
-    background-image: url(/Preslava/patternbkg.png);
+    background-image: url(/Image-sorce/patternbkg.png);
     background-repeat: no-repeat;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-#back{
+#home{
     position: absolute;
-    top: 0.3rem;
+    top: 0.1rem;
     right: 1rem;
     background-color: #ffd56b;
     padding: 1rem;
@@ -51,15 +31,16 @@ body{
     color: black;
 }
 
-#back:hover{
-    background-color: #f9c950;
+#home:hover{
+    background-color: #f8c239;
 }
 
 #profile{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1rem solid #ffd56b;
+    border: solid #ffb347;
+    border-width: 0rem 1rem 1rem 1rem;
     padding: 1rem;
     font-size: 2rem;
 }
@@ -96,4 +77,16 @@ button:hover{
     color: black;
     width: 18rem;
     text-align: center;
+    font-size: 2rem;
+}
+
+footer{
+    font-size: 1rem;
+    color: #546760;
+    background-color: #a3e4d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
 }
