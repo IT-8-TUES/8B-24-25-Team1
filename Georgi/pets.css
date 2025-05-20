@@ -28,14 +28,15 @@ body{
 }
 
 header{
-    height: 2rem;
     color: white;
     background-color: #ffb347;
-    padding: 1rem;
-    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
 }
 
 .button-nav{
