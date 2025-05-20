@@ -83,3 +83,7 @@ header {
     text-decoration: none;
     color: black;
 }
+
+#profile:hover{
+  background-color: #f9c950;
+}
