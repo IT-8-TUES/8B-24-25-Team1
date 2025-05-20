@@ -1,4 +1,6 @@
 const totalclicks =  parseInt(localStorage.getItem("totalClicks") || 0);
+const bought = parseInt(localStorage.getItem("achi3") || 0);
+
 
 const a1 = document.getElementById("1");
 const a2 = document.getElementById("2");
@@ -31,3 +33,8 @@ if (totalclicks >= 1000){
     localStorage.setItem('ach6', 'unlocked');
 }
 
+if (bought === 1){
+    a5.style.backgroundColor = "#657d75";
+    a5.style.color = "white";
+    localStorage.setItem('ach5', 'unlocked');
+}
