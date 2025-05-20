@@ -1,0 +1,57 @@
+body{
+  margin:0px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.toggle-password {
+    cursor: pointer;
+    user-select: none;
+  }
+  .form-wrapper {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .form-box {
+    width:20vh;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    border:2px solid black;
+    border-radius:2vh ;
+    font-size:2vh;
+  }
+  .button{
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 1vh;
+    cursor: pointer;
+    background-color: white;
+    margin-top:2vh;
+    width:20vh;
+  }
+  .button:hover{
+    background-color:#d8d5d5;;
+  }
+  .input{
+    width:20vh;
+  }
+  .info{
+    text-align: center;
+  }
+  .Header{
+    background-color: #ffb347;
+    color: white;
+    width: 100%;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+  }
+  
