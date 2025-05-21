@@ -78,6 +78,8 @@ button:hover{
     width: 18rem;
     text-align: center;
     font-size: 2rem;
+    position: relative;
+    top: -4rem;
 }
 
 footer{
@@ -95,4 +97,10 @@ h3{
     font-size: 5rem;
     margin: 0rem;
     font-weight: lighter;
+}
+
+#pet-image{
+    height: 30rem;
+    position: relative;
+    top: -3rem;
 }

@@ -100,4 +100,5 @@ footer{
 
 .selected-pet{
     background-color: #f8c239;
+    font-weight: bold;
 }

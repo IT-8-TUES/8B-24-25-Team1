@@ -16,14 +16,15 @@
      @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
   </style>
   <header>Pet Clicker</header>
-  <a id="profile" href="../Georgi/profile.html">Sign in</a>
+    <a class="button-nav" style="left: 1rem;" href="/Boris/signUp.html">Sign Up</a>
+    <a class="button-nav" style="left: 8rem;" href="/Boris/logIn.html">Log In</a>
   <div class="love">
     <img src="https://img.icons8.com/emoji/48/heart-suit.png" width="40" height="40" alt="Heart" />
     <span id="love">0</span>
   </div>
 
   <div class="pet">
-    <img id="cat" src="cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
+    <img id="cat" src="cat.gif" alt="Cat" style=" height: 30rem;"/>
     <p style="font-style: italic; color: #7c5c46; font-size: 40px;">Your friend!</p>
   </div>
 
@@ -88,8 +89,21 @@ if (localStorage.getItem('autoclickerEnabled') === 'true') {
     });
 
   });
+      const petImages = [
+            "../Image-sorce/cat.gif",
+            "../Image-sorce/catnormal.png",
+            "../Image-sorce/Untitled129_20250422193436.png",
+            "../Image-sorce/Untitled129_20250422194538.png",
+            "../Image-sorce/pngtree-pixel-puppy-pattern-cute-png-image_3369842-removebg-preview.png",
+            "../Image-sorce/food_hamster-removebg-preview.png"];
 
-  
+        const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        const petImageElement = document.getElementById("cat");
+
+        if (selectedIndex !== null)
+            petImageElement.src = petImages[selectedIndex];
+        else
+            petImageElement.src = petImages[0];
 </script>
 
 </body>

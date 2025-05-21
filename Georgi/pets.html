@@ -12,7 +12,7 @@
      @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
   </style>
     <header>Pets
-    <a class="button-nav" style="right: 1rem;" href="../Yana/index.html">Home</a></header>
+    <a class="button-nav" style="right: 1rem;" href="../Yana/index.html">Home</a>
     <a class="button-nav" style="left: 1rem;" href="profile.html">Profile</a></header>
     <main>
             <div id="pets">
@@ -28,7 +28,29 @@
         <span>Pet Clicker &copy; 2025 All rights reserved</span>
     </footer>
     <script>
+        const buttons = document.querySelectorAll(".button-select");
 
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                buttons.forEach(btn => {
+                    btn.classList.remove("selected-pet");
+                    btn.textContent = "Select";});
+
+                button.classList.add("selected-pet");
+                button.textContent = "Selected";
+                localStorage.setItem("selectedPet", index);});});
+
+        const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        
+        if (selectedIndex !== null)
+            {buttons.forEach(button => {
+                button.classList.remove("selected-pet");
+                button.textContent = "Select";});
+            buttons[selectedIndex].classList.add("selected-pet");
+            buttons[selectedIndex].textContent = "Selected";}
+        else
+            {buttons[0].classList.add("selected-pet");
+            buttons[0].textContent = "Selected";}
     </script>
 </body>
 </html>
