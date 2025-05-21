@@ -16,10 +16,9 @@ body{
     font-family: 'Pixelify Sans', sans-serif;
 }
 
-#home{
+.button-nav{
     position: absolute;
     top: 0.4rem;
-    right: 1rem;
     background-color: #ffd56b;
     padding: 1rem;
     border: 0.25rem solid #f8c239;
@@ -31,7 +30,7 @@ body{
     color: black;
 }
 
-#home:hover{
+.button-nav:hover{
     background-color: #f8c239;
 }
 
