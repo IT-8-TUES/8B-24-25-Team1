@@ -81,17 +81,17 @@ body {
     margin: 2em;
     padding: 2em;
     background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(34, 34, 35, 0.2);
+    border-radius: 1.2rem;
+    box-shadow: 0 0.15rem 0.3rem rgba(34, 34, 35, 0.2);
     transition: transform 0.2s;
     width: 100%;
     max-width: 1200px;
     gap: 2em;
-    border: 2px solid #79a596;
+    border: 0.2rem solid #79a596;
 }
 
 img{
-    border-radius: 10px;
+    border-radius: 1.2rem;
 }
 
 
@@ -122,8 +122,8 @@ a:hover {
     background-color: #f5f5f5;
     color: #546760;
     margin: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(34, 34, 35, 0.2);
+    border-radius: 1.2rem;
+    box-shadow: 0 0.15rem 0.3rem rgba(34, 34, 35, 0.2);
     border-color: #8fb3aa;
     border-width: 0.05em;
     border-style: solid;

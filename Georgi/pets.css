@@ -35,7 +35,7 @@ header{
     align-items: center;
     padding: 1.2rem;
     font-size: 1.8rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0.15rem 0.3rem rgba(0,0,0,0.2);
 }
 
 .button-nav{

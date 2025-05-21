@@ -1,10 +1,13 @@
 
+body{ 
+  background-image: url(/Image-sorce/patternbkg.png);
+}
 .t-btn {
       position: absolute;
       top: 0.4rem;
       right: 1rem;
          background-color: #87b189;
-        border: 3px solid 	#4e6b4f;
+        border: 0.2rem solid 	#4e6b4f;
       padding: 1.05rem 1.25rem;
       border-radius: 1rem;
       font-weight: bold;
@@ -110,21 +113,21 @@
 #username-edit,
 #email-edit,
 #avatar-edit {
-  margin-top: 10px;
+  margin-top: 0.8rem;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.8rem;
   align-items: center;
 }
 #username-input,
 #email-input,
 #avatar-input {
   padding: 8px 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  border: 0.1px solid #ccc;
+  border-radius: 0.4rem;
   font-size: 1rem;
   font-family: 'Pixelify Sans', sans-serif;
-  width: 250px;
+  width: 15rem;
 }
 
 #save-username,
@@ -133,8 +136,8 @@
     background-color: #ffd56b;
   color: black;
   border: none;
-  padding: 8px 14px;
-  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
   cursor: pointer;
   font-family: 'Pixelify Sans', sans-serif;
   transition: background-color 0.3s ease;
@@ -148,6 +151,6 @@
 
 #email-error {
   font-size: 0.9rem;
-  margin-top: 4px;
-  margin-left: 4px;
+  margin-top: 0.2rem;
+  margin-left: 0.3rem;
 }

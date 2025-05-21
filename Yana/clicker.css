@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(/Image-sorce/patternbkg.png);
 }
 
 header {
@@ -15,19 +16,19 @@ header {
   padding: 1.2rem;
   text-align: center;
   font-size: 1.8rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  letter-spacing: 1px;
+  box-shadow: 0 0.15rem 0.3rem rgba(0,0,0,0.2);
+  letter-spacing: 0.2px;
 }
 
 .love {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 1.1rem;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   margin: 3rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.15);
   gap: 0.5rem;
 }
 
@@ -37,29 +38,29 @@ header {
 
 .menu {
   display: flex;
-  height: 60px;
+  height: 4rem;
   justify-content: space-around;
   width: 110%;
   position: fixed;
   bottom: 0;
   background: #8d7566;
   padding: 0.6rem 0;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.1);
 }
 
 .menu a {
   color: rgb(32, 32, 32);
-  height: 30px;
+  height: 1.7rem;
   text-decoration: none;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
-  border: 3px solid 	#5f5146;
-  border-radius: 16px;
+  border: 0.20rem solid 	#5f5146;
+  border-radius: 1rem;
   background-color: 	#ac9580;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.2);
   transition: background-color 0.2s;
   display: flex;
-  margin-top: 7px;
+  margin-top: 0.65rem;
   align-items: center;
   gap: 0.1rem;
 }
@@ -76,9 +77,8 @@ header {
     left: 1rem;
     background-color: #87b189;
     padding: 1rem;
-      border: 3px solid 	#4e6b4f;
-  border-radius: 16px;
-    border-radius: 1rem;
+      border: 0.2rem solid 	#4e6b4f;
+  border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;

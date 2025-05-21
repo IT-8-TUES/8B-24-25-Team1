@@ -12,13 +12,13 @@ body {
 }
 
 .form-box {
-  width: 320px;
+  width: 20rem;
   background-color: rgb(252, 196, 124);
  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  border: 20px solid #ffb347;
+  border: 2rem solid #ffb347;
   border-radius: 2vh;
   font-size: 1.5rem;
 }
@@ -54,7 +54,7 @@ body {
  .input {
       padding: 0.6rem;
       font-size: 1rem;
-      border: 2px solid #ccc;
+      border: 0.15rem solid #ccc;
       border-radius: 0.8rem;
       transition: border 0.3s;
       margin: 0.8rem;
@@ -76,8 +76,8 @@ body {
   padding-top: 1.5rem;
   text-align: center;
   font-size: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  letter-spacing: 1px;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+  letter-spacing: 0.15rem;
   margin: 0;
   position: fixed;          
   top: 0;
