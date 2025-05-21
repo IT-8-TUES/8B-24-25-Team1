@@ -87,3 +87,21 @@ header {
 #profile:hover{
   background-color: #f9c950;
 }
+
+.button-nav{
+    position: absolute;
+    top: 0.4rem;
+    background-color: #ffd56b;
+    padding: 1rem;
+    border: 0.25rem solid #f8c239;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.button-nav:hover{
+    background-color: #f8c239;
+}
