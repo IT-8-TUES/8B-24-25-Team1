@@ -6,11 +6,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #333;
 }
 
 header {
-  background-color: #ffb347;
+  background-color: #5a855d;
   color: white;
   width: 100%;
   padding: 1.2rem;
@@ -43,20 +42,20 @@ header {
   width: 110%;
   position: fixed;
   bottom: 0;
-  background: #deb887;
+  background: #8d7566;
   padding: 0.6rem 0;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 .menu a {
-  color: white;
+  color: rgb(32, 32, 32);
   height: 30px;
   text-decoration: none;
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
-  border: 2px solid #996828;
+  border: 3px solid 	#5f5146;
   border-radius: 16px;
-  background-color: #b98744;
+  background-color: 	#ac9580;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: background-color 0.2s;
   display: flex;
@@ -66,16 +65,19 @@ header {
 }
 
 .menu a:hover {
-  background-color: #996828;
+  background-color: #6b5b4e;
   text-decoration: none;
+  color: #fff;
 }
 
 #profile{
   position: absolute;
     top: 0.4rem;
     left: 1rem;
-    background-color: #ffd56b;
+    background-color: #87b189;
     padding: 1rem;
+      border: 3px solid 	#4e6b4f;
+  border-radius: 16px;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -85,5 +87,6 @@ header {
 }
 
 #profile:hover{
-  background-color: #f9c950;
+  background-color: #4e6b4f;
+  color: #fff;
 }
