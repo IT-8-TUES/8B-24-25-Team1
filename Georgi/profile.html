@@ -18,7 +18,7 @@
     <main>
         <div id="profile">
             <h3>Guest</h3>
-            <img src="../Image-sorce/cat.gif">
+            <img id="pet-image" src="../Image-sorce/cat.gif">
             <a id="button-change-pet" href="pets.html">Change pet</a>
         </div>
     </main>
@@ -26,6 +26,21 @@
         <span>Pet Clicker &copy; 2025 All rights reserved</span>
     </footer>
     <script>
+        const petImages = [
+            "../Image-sorce/cat.gif",
+            "../Image-sorce/catnormal.png",
+            "../Image-sorce/Untitled129_20250422193436.png",
+            "../Image-sorce/Untitled129_20250422194538.png",
+            "../Image-sorce/pngtree-pixel-puppy-pattern-cute-png-image_3369842-removebg-preview.png",
+            "../Image-sorce/food_hamster-removebg-preview.png"];
+
+        const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        const petImageElement = document.getElementById("pet-image");
+
+        if (selectedIndex !== null)
+            petImageElement.src = petImages[selectedIndex];
+        else
+            petImageElement.src = petImages[0];
     </script>
 </body>
 </html>

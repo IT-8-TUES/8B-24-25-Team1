@@ -89,8 +89,21 @@ if (localStorage.getItem('autoclickerEnabled') === 'true') {
     });
 
   });
+      const petImages = [
+            "../Image-sorce/cat.gif",
+            "../Image-sorce/catnormal.png",
+            "../Image-sorce/Untitled129_20250422193436.png",
+            "../Image-sorce/Untitled129_20250422194538.png",
+            "../Image-sorce/pngtree-pixel-puppy-pattern-cute-png-image_3369842-removebg-preview.png",
+            "../Image-sorce/food_hamster-removebg-preview.png"];
 
-  
+        const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        const petImageElement = document.getElementById("cat");
+
+        if (selectedIndex !== null)
+            petImageElement.src = petImages[selectedIndex];
+        else
+            petImageElement.src = petImages[0];
 </script>
 
 </body>

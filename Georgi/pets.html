@@ -41,6 +41,7 @@
                 localStorage.setItem("selectedPet", index);});});
 
         const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        
         if (selectedIndex !== null)
             {buttons.forEach(button => {
                 button.classList.remove("selected-pet");
