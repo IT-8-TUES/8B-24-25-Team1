@@ -17,13 +17,17 @@
     </header>
     <main>
         <div id="profile">
-            <h3>Guest</h3>
+            <h3 id="guest">Guest</h3>
             <img id="pet-image" src="../Image-sorce/cat.gif">
+            <h3 id="name">Luna</h3>
             <a id="button-change-pet" href="pets.html">Change pet</a>
         </div>
+        <p id="description">Luna is a lazy but lovable furball. He loves napping, snacks, and slow walks across your screen.</p>
     </main>
     <footer>
-        <span>Pet Clicker &copy; 2025 All rights reserved</span>
+        <p>Pet Clicker &copy; 2023</p>
+        <p>All rights reserved</p>
+        <p>Copyright Disclamer Under Section 107 of the Copyright Act 1976, allowance is made for 'fairy use' for pruporses such as criticsim, comment, news reporting, teaching, schoolarship, and research. Fair use is a usepermitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use</p>
     </footer>
     <script>
         const petImages = [
@@ -34,13 +38,33 @@
             "../Image-sorce/pngtree-pixel-puppy-pattern-cute-png-image_3369842-removebg-preview.png",
             "../Image-sorce/food_hamster-removebg-preview.png"];
 
+        const petNames = [
+            "Luna",
+            "Pixel",
+            "Ziggy",
+            "Rusty",
+            "Max",
+            "Nibble"];
+
+        const petDescriptions = [
+            "Luna is a lazy but lovable furball. He loves napping, snacks, and slow walks across your screen.",
+            "Pixel is Ziggy's and Rusty's twin brother. He is also quick and curious. Pixel disappears when you blink, but always returns for attention.",
+            "Ziggy is Pixel's and Rusty's twin brother. He is a calm and graceful pet who enjoys moonlight and soft music.",
+            "Rusty is Pixel's and Ziggy's twin brother. He is also the quiet observer. Rusty watches everything with wide eyes and loves sitting by the window, lost in thought.",
+            "Max is always excited to play! He wags his tail even in pixel form and loves chasing digital bones.",
+            "Nibble is tiny but mighty. He squeaks for food and loves spinning in circles when he’s happy."];
+
         const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
         const petImageElement = document.getElementById("pet-image");
 
         if (selectedIndex !== null)
-            petImageElement.src = petImages[selectedIndex];
+            {petImageElement.src = petImages[selectedIndex];
+            document.getElementById("name").textContent = petNames[selectedIndex];
+            document.getElementById("description").textContent = petDescriptions[selectedIndex];}
         else
-            petImageElement.src = petImages[0];
+            {petImageElement.src = petImages[0];
+            document.getElementById("name").textContent = petNames[0];
+            document.getElementById("description").textContent = petDescriptions[0];}
     </script>
 </body>
 </html>
