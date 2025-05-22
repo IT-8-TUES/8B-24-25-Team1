@@ -96,6 +96,7 @@ footer{
     color: #546760;
   background-color: #5a855d;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
