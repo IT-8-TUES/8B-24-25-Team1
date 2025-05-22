@@ -90,10 +90,10 @@ img{
     font-family: 'Pixelify Sans', sans-serif;
 }
 
-footer{
+footer {
     font-size: 1rem;
     color: #546760;
-    background-color: #5a855d;
+    background-color: #a3e4d7;
     display: flex;
     flex-direction: column;
     justify-content: center;
