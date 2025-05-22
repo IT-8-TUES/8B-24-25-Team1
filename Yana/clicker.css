@@ -76,8 +76,9 @@ header {
     top: 0.4rem;
     left: 1rem;
     background-color: #87b189;
-    padding: 1rem;
       border: 0.2rem solid 	#4e6b4f;
+
+        padding: 1rem;
   border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -94,9 +95,9 @@ header {
 .button-nav{
     position: absolute;
     top: 0.4rem;
-    background-color: #ffd56b;
+  background-color: #87b189;
     padding: 1rem;
-    border: 0.25rem solid #f8c239;
+      border: 0.2rem solid 	#4e6b4f;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -106,5 +107,6 @@ header {
 }
 
 .button-nav:hover{
-    background-color: #f8c239;
+    background-color: #4e6b4f;
+  color: #fff;
 }

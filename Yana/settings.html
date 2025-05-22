@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pet Clicker</title>
-  <link rel="stylesheet" href="clicker.css">
-  <link rel="stylesheet" href="settings.css">
-  <link rel="stylesheet" href="/Preslava/footer+header.css">
-  <link rel="icon" type="image/png" href="catnormal.png">
-  <script src="clicker.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Pet clicker</title>
+    <link rel="stylesheet" href="/Georgi/profile.css">
+      <link rel="stylesheet" href="/Yana/settings.css">
+      <script src="clicker.js" defer></script>
+    <link rel="icon" type="image/png" href="/Image-sorce/catnormal.png">
 </head>
 <body>
-  <style>
-            @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-        </style>
-  <header>Pet Clicker</header>
-  <a id="profile" href="/Georgi/profile.html">Sign in</a>
-  <div class="love">
-    <img src="https://img.icons8.com/emoji/48/heart-suit.png" width="40" height="40" alt="Heart" />
-    <span id="love">0</span>
-  </div>
-
-  <div class="pet">
-    <img id="cat" src="cat.gif" alt="Cat" style=" width: 400px; height: 300px;"/>
-    <p style="font-style: italic; color: #7c5c46; font-size: 40px;">Your friend!</p>
-  </div>
-
-  <div class="menu">
-    <a href="#">Pets</a>
-    <a href="#">Achievements</a>
-    <a href="/Preslava/shop.html">Store</a>
-  </div>
-  <a link="settings.html" class="t-btn">Settings</a>
- <div class="dr">
-  <div class="pnl" id="pnlSettings">
-    <a href="index.html" class="c-btn">×</a>
-    <h1 style="font-size: 3rem;">Профил</h1>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+  </style>
+    <header>Profile
+    <a class="button-nav" style="right: 1rem;" href="/Yana/index.html">Home</a>
+    <a class="button-nav" style="left: 1rem;" href="/Yana/settings.html">Settings</a>
+    </header>
+    <main>
+        <div id="profile">
+            <h3>Guest</h3>
+            <img id="pet-image" src="../Image-sorce/cat.gif">
+            <a id="button-change-pet" href="pets.html">Change pet</a>
+        </div>
+    </main>
+    <div class="pnl" id="pnlSettings">
+    <a href="/Georgi/profile.html" class="c-btn">×</a>
+    <h1 style="font-size: 3rem;">Profile</h1>
   
     <div class="info">
-  <p><strong>Потребителско име:</strong> <span id="username">Kartofi-lover</span></p>
-  <button class="e-btn" id="edit-username">Промени потребителското име</button>
+  <p><strong>Nickname:</strong> <span id="username">Kartofi-lover</span></p>
+  <button class="e-btn" id="edit-username">Change nickname</button>
   <div id="username-edit" style="display: none;">
     <input type="text" id="username-input" />
-    <button id="save-username">Запази</button>
+    <button id="save-username">Save</button>
   </div>
 
-  <p><strong>Имейл:</strong> <span id="email">purzeni@kartofi.com</span></p>
-  <button class="e-btn" id="edit-email">Промени имейла</button>
+  <p><strong>Email:</strong> <span id="email">purzeni@kartofi.com</span></p>
+  <button class="e-btn" id="edit-email">Change email</button>
   <div id="email-edit" style="display: none;">
     <input type="email" id="email-input" />
-    <button id="save-email">Запази</button>
-    <p id="email-error" style="color: rgb(252, 6, 6); display: none;">Невалиден имейл!</p>
+    <button id="save-email">Save</button>
+    <p id="email-error" style="color: rgb(252, 6, 6); display: none;"> Invalid email!</p>
   </div>
 
-  <p><strong>Профилна снимка:</strong></p>
+  <p><strong>Profile picture:</strong></p>
   <div class="avatar-row">
     <img class="avatar" id="avatar-img" src="/Image-sorce/parzeni-kartofi.webp" alt="Примерна снимка">
-    <button class="e-btn-lrg" id="edit-avatar">Промени снимката</button>
+    <button class="e-btn-lrg" id="edit-avatar">Change picture</button>
   </div>
   <div id="avatar-edit" style="display: none;">
     <input type="text" id="avatar-input" placeholder="URL на снимка" />
-    <button id="save-avatar">Запази</button>
+    <button id="save-avatar">Save</button>
   </div>
 </div>
   </div>
- </div>
+    <footer>
+        <span>Pet Clicker &copy; 2025 All rights reserved</span>
+    </footer>
+    <script>
+        const petImages = [
+            "../Image-sorce/cat.gif",
+            "../Image-sorce/catnormal.png",
+            "../Image-sorce/Untitled129_20250422193436.png",
+            "../Image-sorce/Untitled129_20250422194538.png",
+            "../Image-sorce/pngtree-pixel-puppy-pattern-cute-png-image_3369842-removebg-preview.png",
+            "../Image-sorce/food_hamster-removebg-preview.png"];
+
+        const selectedIndex = parseInt(localStorage.getItem("selectedPet"));
+        const petImageElement = document.getElementById("pet-image");
+
+        if (selectedIndex !== null)
+            petImageElement.src = petImages[selectedIndex];
+        else
+            petImageElement.src = petImages[0];
+</script>
 </body>
 </html>

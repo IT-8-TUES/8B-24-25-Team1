@@ -28,9 +28,9 @@ body{
       right: 0.8rem;
       width: 80vw;
       max-width: 50rem;
-      background: rgba(255, 243, 214, 0.9);
+      background: rgba(203, 248, 197, 0.9);
       backdrop-filter: blur(0.625rem);
-      border: 0.1875rem solid #d8b370;
+      border: 0.2rem solid 	#4e6b4f;
       border-radius: 1.25rem;
       padding: 2rem;
       box-shadow: 0.375rem 0.375rem 1.25rem rgba(0, 0, 0, 0.4);
@@ -59,7 +59,7 @@ body{
 
     .e-btn, .e-btn-lrg {
       margin-bottom: 0.9375rem;
-      background-color: #ffd56b;
+       background-color: #87b189;
       color: #4a3f29;
       border: none;
       padding: 0.5rem 0.75rem;
@@ -69,14 +69,10 @@ body{
       transition: background-color 0.3s;
     }
 
-    .e-btn-lrg {
-      height: 2.2rem;
-      width: 100%;
-      margin-top: 1rem;
-    }
 
     .e-btn:hover, .e-btn-lrg:hover {
-      background-color: #ffbd3d;
+     color: white;
+      background-color: 	#4c684c;
     }
 
     .avatar {
@@ -84,23 +80,7 @@ body{
       height: 5rem;
       border-radius: 50%;
       margin: 0.625rem 0;
-      border: 0.125rem solid #d8b370;
-    }
-
-    .l-btn {
-      margin-top: 1.25rem;
-      background-color: #ffa488;
-      color: white;
-      border: none;
-      padding: 0.625rem;
-      border-radius: 0.75rem;
-      cursor: pointer;
-      font-weight: bold;
-      width: 100%;
-    }
-
-    .l-btn:hover {
-      background-color: #e58d53;
+      border: 0.125rem solid #8dd8a4;
     }
 
     .avatar-row {
@@ -110,15 +90,7 @@ body{
       align-items: center;
     }
 
-#username-edit,
-#email-edit,
-#avatar-edit {
-  margin-top: 0.8rem;
-  display: flex;
-  flex-direction: row;
-  gap: 0.8rem;
-  align-items: center;
-}
+
 #username-input,
 #email-input,
 #avatar-input {
@@ -133,7 +105,7 @@ body{
 #save-username,
 #save-email,
 #save-avatar {
-    background-color: #ffd56b;
+  background-color: #87b189;
   color: black;
   border: none;
   padding: 0.5rem 1rem;
@@ -146,7 +118,8 @@ body{
 #save-username:hover,
 #save-email:hover,
 #save-avatar:hover {
-     background-color: #f5c13f;
+   color: white;
+      background-color: 	#4c684c;
 }
 
 #email-error {

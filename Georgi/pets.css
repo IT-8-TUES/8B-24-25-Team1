@@ -6,11 +6,12 @@ body{
 }
 
 .pet{
-    border: 1rem solid #f8c239;
+    border: 1rem solid #4e6b4f;
     border-radius: 1rem;
     width: 28rem;
     height: 25rem;
 }
+
 
 .pet button{
     width: 28rem;
@@ -29,7 +30,7 @@ body{
 
 header{
     color: white;
-    background-color: #ffb347;
+  background-color: #5a855d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +42,9 @@ header{
 .button-nav{
     position: absolute;
     top: 0.4rem;
-    background-color: #ffd56b;
+    background-color: #87b189;
     padding: 1rem;
-    border: 0.25rem solid #f8c239;
+    border: 0.25rem solid #4e6b4f;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -53,13 +54,14 @@ header{
 }
 
 .button-nav:hover{
-    background-color: #f8c239;
+background-color: #4e6b4f;
+   color: white;
 }
 
 button{
-    background-color: #ffd56b;
+     background-color: #87b189;
     padding: 1rem;
-    border: 0.25rem solid #f8c239;
+    border: 0.25rem solid #4e6b4f;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -69,7 +71,9 @@ button{
 }
 
 button:hover{
-   background-color: #f8c239; 
+   background-color: #4e6b4f;
+   color: white;
+   border-color: #87b189; 
 }
 
 img{
@@ -90,7 +94,7 @@ img{
 footer{
     font-size: 1rem;
     color: #546760;
-    background-color: #a3e4d7;
+  background-color: #5a855d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,6 +103,6 @@ footer{
 }
 
 .selected-pet{
-    background-color: #f8c239;
+  background-color: #5a855d;
     font-weight: bold;
 }

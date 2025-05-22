@@ -1,12 +1,12 @@
-header{
-    color: white;
-    background-color: #ffb347;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem;
-    font-size: 1.8rem;
-    box-shadow: 0 0.15rem 0.3rem rgba(0,0,0,0.2);
+header {
+  background-color: #5a855d;
+  color: white;
+  width: 100%;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  box-shadow: 0 0.15rem 0.3rem rgba(0,0,0,0.2);
+  letter-spacing: 0.2px;
 }
 
 body{
@@ -20,9 +20,9 @@ body{
 .button-nav{
     position: absolute;
     top: 0.4rem;
-    background-color: #ffd56b;
+    background-color: #87b189;
     padding: 1rem;
-    border: 0.25rem solid #f8c239;
+    border: 0.25rem solid #4e6b4f;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -32,43 +32,30 @@ body{
 }
 
 .button-nav:hover{
-    background-color: #f8c239;
+   background-color: #4e6b4f;
+  color: #fff;
 }
 
 #profile{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid #ffb347;
+    border: solid #8a6b56;
     border-width: 0rem 1rem 1rem 1rem;
     padding: 1rem;
     font-size: 2rem;
 }
 
-button{
-    background-color: #ffd56b;
-    padding: 1rem;
-    border: 0.25rem solid #f8c239;
-    border-radius: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-    color: black;
-    text-decoration: none;
-}
-
-button:hover{
-   background-color: #f8c239; 
-}
-
 #button-change-pet:hover{
-    background-color: #f8c239;
+       background-color: #4e6b4f;
+  color: #fff;
 }
+
 
 #button-change-pet{
-    background-color: #ffd56b;
+    background-color: #87b189;
     padding: 1rem;
-    border: 0.5rem solid #f8c239;
+    border: 0.25rem solid #4e6b4f;
     border-radius: 1.5rem;
     font-weight: bold;
     cursor: pointer;
