@@ -6,7 +6,7 @@ body{
 }
 
 .pet{
-    border: 1rem solid #4e6b4f;
+    border: 1rem solid #8d7566;
     border-radius: 1rem;
     width: 28rem;
     height: 25rem;
@@ -59,9 +59,9 @@ background-color: #4e6b4f;
 }
 
 button{
-     background-color: #87b189;
+    background-color: #ac9580;
     padding: 1rem;
-    border: 0.25rem solid #4e6b4f;
+    border: 0.25rem solid #8d7566;
     border-radius: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -71,8 +71,7 @@ button{
 }
 
 button:hover{
-   background-color: #4e6b4f;
-   color: white;
+   background-color: #8d7566;
 }
 
 img{
@@ -80,8 +79,10 @@ img{
 }
 
 .button-select{
+    background-color: #ac9580;
     position: relative;
     border-radius: 0rem;
+    border-color: #8d7566;
     border-width: 1rem 0rem 0rem 0rem;
     font-size: 2rem;
     display: flex;
@@ -103,6 +104,6 @@ footer {
 }
 
 .selected-pet{
-    background-color: #4e6b4f;
+    background-color: #8d7566;
     font-weight: bold;
 }

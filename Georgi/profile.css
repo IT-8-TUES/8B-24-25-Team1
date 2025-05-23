@@ -61,11 +61,6 @@ body {
 
 
 
-#button-change-pet:hover{
-    background-color: #4e6b4f;
-    color: #fff;
-}
-
 
 footer {
     font-size: 1rem;
@@ -103,9 +98,9 @@ footer {
 }
 
 #button-change-pet {
-    background-color: #87b189;
+    background-color: #ac9580;
     padding: 1rem;
-    border: 0.25rem solid #4e6b4f;
+    border: 0.5rem solid #8d7566;
     border-radius: 1.5rem;
     font-weight: bold;
     cursor: pointer;
@@ -116,3 +111,9 @@ footer {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+#button-change-pet:hover{
+    background-color: #8d7566;
+    color: #fff;
+}
+
