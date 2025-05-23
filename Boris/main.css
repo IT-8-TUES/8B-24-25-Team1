@@ -16,6 +16,7 @@ body {
   width: 20rem;
   background-color: #c0f0c2;
  padding: 2.5rem;
+ padding-bottom: 0rem;
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -101,8 +102,7 @@ footer {
   text-align: center;
   padding: auto;
   box-sizing: border-box;
-  position: relative;
-  top: 3rem;
+  position: fixed;
 }
 .message {
   display: flex;
@@ -127,4 +127,33 @@ footer {
   transform: translate(-50%, -50%);
   height: 15rem;
   z-index: 1;
+}
+.free-imageS {
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  height: 15rem;
+  z-index: 1;
+}
+.free-image1S {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  height: 15rem;
+  z-index: 1;
+}
+.yesno-account{
+  display: flex;
+  align-self: center;
+  font-size:1rem;
+  padding:1rem;
+  padding-top:0.2rem
+}
+.remember-me{
+  font-size:1.2rem;
+}
+.agree{
+  font-size:1.2rem;
 }
