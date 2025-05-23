@@ -46,7 +46,7 @@ buyButtons.forEach((button, index) => {
 
               button.textContent = "Bought";
               button.disabled = true;
-              button.style.backgroundColor = "#657d75";
+              button.style.backgroundColor = "#8d7566";
               button.style.color = "white";
               button.style.cursor = "not-allowed";
 
